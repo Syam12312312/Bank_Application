@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<title>BANK</title>
+
+<style>
+    body {
+        background-image: url('https://cdn.wallpapersafari.com/26/10/lV9LYT.jpg');
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: black;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 0;
+        color:white;
+        color: black;
+    }
+
+    table {
+        margin: 0 auto;
+        width: 400px;
+        background-color: rgba(550, 550, 550, 0.5);       
+         padding: 45px;
+        border-radius: 10px;
+        
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        
+    }
+
+    input[type="submit"] {
+        width: auto;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    a{
+		   color: black;	
+		   text-decoration: none;
+		     background-color: rgba(200, 200, 200, 0.5);
+		   padding: 8px 16px;
+		border-radius: 5px;
+		transition: background-color 0.3s, transform 0.3s;
+		}
+
+		a:hover {
+		background-color: grey;
+		  color: #ffcc00;
+		   transform: scale(1.1);
+		};
+</style>
+</head>
+<body>
+	<form action="Insert.jsp">
+	<table >
+        <tr >
+            <td>First_Name</td>
+            <td><input type="text" name="Fname" required style="border-radius: 10px"/></td>
+        </tr>
+        <tr>
+            <td>Last_Name</td>
+            <td><input type="text" name="Sname" required style="border-radius: 10px"/></td>
+        </tr>
+        <tr>
+            <td>Street</td>
+            <td><input type="text" name="Street" required style="border-radius: 10px"/></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="Address" required style="border-radius: 10px"/></td>
+        </tr>
+         <tr>
+            <td>State</td>
+            <td>
+                <select name="State" required style="border-radius: 10px">
+                	<option>--SELECT--</option>
+                    <option>AP</option>
+                    <option>TELANGANA</option>
+                    <option>DELHI</option>
+                    <option>MADHYA PRADESH</option>
+                    <option>GUJARAT</option>
+                    
+                    <option>OTHER</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="Email" required style="border-radius: 10px"/></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input type="Number" name="Phone" required style="border-radius: 10px"/></td>
+        </tr>
+       
+        <tr>
+            <td colspan="2"><input type="submit" value="Save Customers Details" /></td>
+        </tr>
+    </table>
+	</form>
+	<br>
+	<a href="View.jsp">View Students Details</a>
+	
+</body>
+</html>
